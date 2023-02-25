@@ -118,7 +118,24 @@ struct ContentView: View {
                             )
                     }
                     Button {
-                        print("Hello")
+                        self.numbers[0] = Int.random(in: 0...self.symbols.count - 1)
+                        self.numbers[1] = Int.random(in: 0...self.symbols.count - 1)
+                        self.numbers[2] = Int.random(in: 0...self.symbols.count - 1)
+                        
+                        counter += 1
+                        
+                        if self.numbers[0] == self.numbers[1] &&
+                            self.numbers[1] == self.numbers[2] {
+                            self.showingAlert = .success
+                            counter = 0
+                            
+                        }
+                        
+                        if(counter > 5) {
+                            self.showingAlert = .failure
+                            counter = 0
+                        }
+                        
                     } label: {
                         RoundedRectangle(cornerRadius: 10)
                             .fill(Color("color"))
@@ -132,6 +149,14 @@ struct ContentView: View {
                             .shadow(color: .gray, radius: 1, y: 4)
                     }
 
+                }
+            }
+            .alert(item: $showingAlert){ alert -> Alert in
+                switch alert{
+                case .success:
+                    return Alert(title: Text("Yahhh! You Won"), message: Text("Born with the charm"), dismissButton: .cancel())
+                case .failure:
+                 return Alert(title: Text("Ooooopppsss!"), message: Text("Better luck next time"), dismissButton: .cancel())
                 }
             }
         }
