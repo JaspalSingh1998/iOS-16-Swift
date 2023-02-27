@@ -43,6 +43,6 @@ enum Keys: String {
     
 }
 
-enum Operations {
+enum Operation {
     case add, subtract, multiply, divide, none
 }
