@@ -37,7 +37,7 @@ enum Keys: String {
         case .clear, .negative, .percentage:
             return Color("Hoperator")
         default:
-            return Color("num")
+            return Color("Num")
         }
     }
     
