@@ -18,6 +18,7 @@
 		C5E7B55E29B6EAD1002C9C25 /* HomeScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5E7B55D29B6EAD1002C9C25 /* HomeScreen.swift */; };
 		C5E7B56129B6EF4E002C9C25 /* ImageData.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5E7B56029B6EF4E002C9C25 /* ImageData.swift */; };
 		C5E7B56329B6EF5F002C9C25 /* NearYouData.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5E7B56229B6EF5F002C9C25 /* NearYouData.swift */; };
+		C5E7B56529B79530002C9C25 /* FruitCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5E7B56429B79530002C9C25 /* FruitCardView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,6 +53,7 @@
 		C5E7B55D29B6EAD1002C9C25 /* HomeScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreen.swift; sourceTree = "<group>"; };
 		C5E7B56029B6EF4E002C9C25 /* ImageData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageData.swift; sourceTree = "<group>"; };
 		C5E7B56229B6EF5F002C9C25 /* NearYouData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NearYouData.swift; sourceTree = "<group>"; };
+		C5E7B56429B79530002C9C25 /* FruitCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FruitCardView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -142,6 +144,7 @@
 			isa = PBXGroup;
 			children = (
 				C5E7B55D29B6EAD1002C9C25 /* HomeScreen.swift */,
+				C5E7B56429B79530002C9C25 /* FruitCardView.swift */,
 			);
 			path = HomeScreenViews;
 			sourceTree = "<group>";
@@ -289,6 +292,7 @@
 				C5E7B56329B6EF5F002C9C25 /* NearYouData.swift in Sources */,
 				C5E7B53329B6E8E7002C9C25 /* ContentView.swift in Sources */,
 				C5E7B55B29B6EAA3002C9C25 /* OnboardingScreenView.swift in Sources */,
+				C5E7B56529B79530002C9C25 /* FruitCardView.swift in Sources */,
 				C5E7B56129B6EF4E002C9C25 /* ImageData.swift in Sources */,
 				C5E7B53129B6E8E7002C9C25 /* ShoppingAppApp.swift in Sources */,
 			);
