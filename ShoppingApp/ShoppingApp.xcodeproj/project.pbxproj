@@ -14,6 +14,10 @@
 		C5E7B54229B6E8E9002C9C25 /* ShoppingAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5E7B54129B6E8E9002C9C25 /* ShoppingAppTests.swift */; };
 		C5E7B54C29B6E8E9002C9C25 /* ShoppingAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5E7B54B29B6E8E9002C9C25 /* ShoppingAppUITests.swift */; };
 		C5E7B54E29B6E8E9002C9C25 /* ShoppingAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5E7B54D29B6E8E9002C9C25 /* ShoppingAppUITestsLaunchTests.swift */; };
+		C5E7B55B29B6EAA3002C9C25 /* OnboardingScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5E7B55A29B6EAA3002C9C25 /* OnboardingScreenView.swift */; };
+		C5E7B55E29B6EAD1002C9C25 /* HomeScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5E7B55D29B6EAD1002C9C25 /* HomeScreen.swift */; };
+		C5E7B56129B6EF4E002C9C25 /* ImageData.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5E7B56029B6EF4E002C9C25 /* ImageData.swift */; };
+		C5E7B56329B6EF5F002C9C25 /* NearYouData.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5E7B56229B6EF5F002C9C25 /* NearYouData.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +48,10 @@
 		C5E7B54729B6E8E9002C9C25 /* ShoppingAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ShoppingAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C5E7B54B29B6E8E9002C9C25 /* ShoppingAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShoppingAppUITests.swift; sourceTree = "<group>"; };
 		C5E7B54D29B6E8E9002C9C25 /* ShoppingAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShoppingAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		C5E7B55A29B6EAA3002C9C25 /* OnboardingScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingScreenView.swift; sourceTree = "<group>"; };
+		C5E7B55D29B6EAD1002C9C25 /* HomeScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreen.swift; sourceTree = "<group>"; };
+		C5E7B56029B6EF4E002C9C25 /* ImageData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageData.swift; sourceTree = "<group>"; };
+		C5E7B56229B6EF5F002C9C25 /* NearYouData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NearYouData.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,8 +102,11 @@
 		C5E7B52F29B6E8E7002C9C25 /* ShoppingApp */ = {
 			isa = PBXGroup;
 			children = (
+				C5E7B55F29B6EF27002C9C25 /* Model */,
+				C5E7B55C29B6EAB0002C9C25 /* HomeScreenViews */,
 				C5E7B53029B6E8E7002C9C25 /* ShoppingAppApp.swift */,
 				C5E7B53229B6E8E7002C9C25 /* ContentView.swift */,
+				C5E7B55A29B6EAA3002C9C25 /* OnboardingScreenView.swift */,
 				C5E7B53429B6E8E8002C9C25 /* Assets.xcassets */,
 				C5E7B53629B6E8E8002C9C25 /* Preview Content */,
 			);
@@ -125,6 +136,23 @@
 				C5E7B54D29B6E8E9002C9C25 /* ShoppingAppUITestsLaunchTests.swift */,
 			);
 			path = ShoppingAppUITests;
+			sourceTree = "<group>";
+		};
+		C5E7B55C29B6EAB0002C9C25 /* HomeScreenViews */ = {
+			isa = PBXGroup;
+			children = (
+				C5E7B55D29B6EAD1002C9C25 /* HomeScreen.swift */,
+			);
+			path = HomeScreenViews;
+			sourceTree = "<group>";
+		};
+		C5E7B55F29B6EF27002C9C25 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				C5E7B56029B6EF4E002C9C25 /* ImageData.swift */,
+				C5E7B56229B6EF5F002C9C25 /* NearYouData.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -257,7 +285,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C5E7B55E29B6EAD1002C9C25 /* HomeScreen.swift in Sources */,
+				C5E7B56329B6EF5F002C9C25 /* NearYouData.swift in Sources */,
 				C5E7B53329B6E8E7002C9C25 /* ContentView.swift in Sources */,
+				C5E7B55B29B6EAA3002C9C25 /* OnboardingScreenView.swift in Sources */,
+				C5E7B56129B6EF4E002C9C25 /* ImageData.swift in Sources */,
 				C5E7B53129B6E8E7002C9C25 /* ShoppingAppApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
