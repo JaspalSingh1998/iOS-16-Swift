@@ -27,6 +27,41 @@ struct DetailView: View {
                 .edgesIgnoringSafeArea(.top)
                 .clipShape(RoundedCornerShape(corner: [.bottomLeft, .bottomRight], radius: 50))
                 .frame(width: .infinity, height: .infinity, alignment: .top)
+                .shadow(color: .gray, radius: 5, x:5, y:5)
+                .overlay(
+                    Image("\(fruit.rawValue)")
+                        .resizable()
+                        .frame(width: 250, height: 250, alignment: .center)
+                        .shadow(color: .gray, radius: 5, x: 5, y: 5)
+                )
+                Spacer()
+                Text("\(fruit.rawValue) - Medium")
+                .fontWeight(.medium)
+                .font(.system(.title))
+                .padding(.horizontal)
+                .textCase(.uppercase)
+            Text("Each (500g - 700g)")
+                .padding(.horizontal)
+            Text("Organic agriculture is intended to produce high quality, nutritious food that contributes to preventive health care and well-being. In view of this, it avoids the use of fertilizers, pesticides, animal drugs and food additives that may have adverse health effects.")
+                .font(.body)
+                .fontWeight(.regular)
+                .multilineTextAlignment(.leading)
+                .lineLimit(6)
+                .padding(.horizontal)
+            
+            HStack{
+                RoundedRectangle(cornerRadius: 8)
+                    .fill(Color("bgColor"))
+                    .opacity(0.16)
+                    .overlay(
+                        Image(systemName: "hourglass")
+                            .font(.system(size: 40))
+                    ).frame(width: 50, height: 50)
+                VStack(alignment: .leading, spacing: 5){
+                    Text("Delivery Time")
+                    Text("25-30 Mins")
+                }
+            }.padding(.horizontal)
         }
     }
 }
